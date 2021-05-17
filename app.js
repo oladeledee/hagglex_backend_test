@@ -15,8 +15,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 //tell express that we want to use the frontend folder for our static assets
-app.use(express.static(path.join(__dirname, 'frontend')));
+app.use(express.static(path.join(__dirname, 'frontend/build')));
 
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
+);
 app.post('/scrape', function(req, res){
     res.setHeader('Content-Type', 'application/json');
 
