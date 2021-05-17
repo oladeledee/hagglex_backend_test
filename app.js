@@ -34,7 +34,7 @@ app.post('/scrape', function(req, res){
       //set a reference to the document that came back
       const  ch_ = cheerio.load(responseHtml);
      //create a reference to the meta elements
-      const  ch_title =git ch_('head title').text();
+      const  ch_title =ch_('head title').text();
       const  ch_desc = ch_('meta[name="description"]').attr('content');
       const  ch_kwd = ch_('meta[name="keywords"]').attr('content');
       const  ch_ogTitle = ch_('meta[property="og:title"]').attr('content');
