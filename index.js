@@ -84,7 +84,9 @@ app.post('/scrape', function(req, res){
 
 const PORT =process.env.PORT || 3000;
 //listen for an HTTP request
-app.listen(PORT, env.NODE_IP || 'localhost');
-
+app.listen(PORT, ()=>{
 //server is running
-console.log(' listening on http://localhost:3000');
+console.log( `listening on ${PORT}`);
+
+});
+
