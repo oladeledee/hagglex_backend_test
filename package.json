@@ -1,0 +1,21 @@
+{
+  "name": "HaggleX_Backend_Engineer_Assesment",
+  "version": "0.0.1",
+  "description": " Service that Parses a URL returns meta-data and image info for any web page as JSON",
+  "main": "index.js",
+  "author": "oladele esuola",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "request": "2.88.2",
+    "cheerio": "1.0.0-rc.9",
+    "body-parser": "^1.15.2"
+  },
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.4"
+  }
+ 
+}
