@@ -1,1 +1,1 @@
-web: node --experimental-modules app.js
+web: npm install && npm run-script build && npm run-script start:prod
