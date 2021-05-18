@@ -12,6 +12,10 @@
     "request": "latest",
     "cheerio": "latest",
     "body-parser": "^1.15.2"
+  },
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.4"
   }
  
 }
