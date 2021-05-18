@@ -2,7 +2,7 @@
   "name": "HaggleX_Backend_Engineer_Assesment",
   "version": "0.0.1",
   "description": " Service that Parses a URL returns meta-data and image info for any web page as JSON",
-  "main": "app.js",
+  "main": "index.js",
   "author": "oladele esuola",
   "scripts": {
     "start": "node index.js"
