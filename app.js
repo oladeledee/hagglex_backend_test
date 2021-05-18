@@ -83,7 +83,7 @@ app.post('/scrape', function(req, res){
 });
 
 //listen for an HTTP request
-app.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost');
+app.listen(process.env.PORT || 3000, env.NODE_IP || 'localhost');
 
 //server is running
 console.log(' listening on http://localhost:3000');
